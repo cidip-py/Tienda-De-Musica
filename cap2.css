@@ -1,7 +1,37 @@
-html {
-    background: #efefef;
-    margin: 10px;
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
+
+html {
+    background: #e6e6e6;
+}
+
+
+#header {
+    background-color: #53719d;
+    padding: 2rem 3rem;
+    margin-top: 0%;
+}
+
+
+h1 {
+    position: relative;
+    top: 8px;
+    text-align: center;
+    font-size: 50px;
+    transition: transform .2s; 
+}
+
+h1:hover {
+    transform: scale(1.5);
+}
+
+
+#subtl {
+    text-align: left;
+}
+
 
 .contactame {
     margin: 10px;
@@ -19,8 +49,18 @@ html {
     text-decoration: none;
 }
 
+#list {
+    margin: 10px 10px 20px 5px;
+   
+}
+
 #list-1 a {
   font-size: 20px;
+  color: #6589bf;
+}
+
+#list-1 a:hover {
+    color: #777680;
 }
 
  #list #list-1 {
