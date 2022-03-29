@@ -1,6 +1,8 @@
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    max-height: 10vh;
+    min-height: 1.vh;
 }
 
 html {
@@ -20,37 +22,74 @@ h1 {
     top: 8px;
     text-align: center;
     font-size: 50px;
-    transition: transform .2s; 
+    transition: transform .1s; 
+    cursor: pointer;
 }
 
 h1:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
+    
 }
 
+
+#Noi {
+    margin-top: 2vw;
+}
+
+.inter:hover {
+    color: #948d8d;
+    cursor: pointer;
+}
+
+#more {
+    text-align: right;
+    margin-right: 10px;
+}
+
+#review {
+   list-style: none;
+}
+
+#review a:hover {
+    color: #afafaf;
+}
+
+#review a {
+    color: black;
+
+}
 
 #subtl {
     text-align: left;
 }
 
 
-.contactame {
+
+.redes {
+    position: relative;
     margin: 10px;
+    text-align: end;
+    top: 18rem;
+    right: 35rem;
 }
 
 
-.contactame i {
+
+
+.redes i {
     color: rgb(5, 5, 5);
     margin: 5px 5px;
     width: 40px;
     height: 40px;
     font-size: 25px;
 }
-.contactame a{
+.redes a{
     text-decoration: none;
+    position: relative;
 }
 
 #list {
-    margin: 10px 10px 20px 5px;
+    margin: 10px 10px 20px -10px;
    
 }
 
@@ -67,3 +106,8 @@ h1:hover {
     list-style:none
 }
 
+@media screen and (max-width: 600px) {
+  body {
+ width: 100%;
+  }
+}
