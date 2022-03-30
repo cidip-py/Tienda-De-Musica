@@ -1,39 +1,75 @@
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    max-height: 10vh;
-    min-height: 1.vh;
 }
 
 html {
     background: #e6e6e6;
 }
 
+a {
+    text-decoration: none;
+}
 
-#header {
+header  {
+    min-height: 80px;
     background-color: #53719d;
-    padding: 2rem 3rem;
-    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 
-h1 {
-    position: relative;
-    top: 8px;
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+    height: 50px;
+}
+
+.logo-anim:hover {
+    animation-name: logox;
+    animation-duration: 1s;
+}
+
+nav a {
+    color: black;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: #afafaf;
+}
+
+header h1 {
+    color: black;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7A7E83;
+    color: white;
     text-align: center;
-    font-size: 50px;
-    transition: transform .1s; 
-    cursor: pointer;
 }
 
-h1:hover {
-    transform: scale(1.2);
-    
+.our {
+    position: relative;
+    color: #e6e6e6;
+    text-decoration: none;
+    justify-content: left;
 }
-
 
 #Noi {
-    margin-top: 2vw;
+    font-size: 100%;
+    margin-top: 20px;
+
 }
 
 .inter:hover {
@@ -48,6 +84,12 @@ h1:hover {
 
 #review {
    list-style: none;
+   text-align: right;
+   margin-top: 5px;
+}
+
+#review a {
+    text-decoration: none;
 }
 
 #review a:hover {
@@ -69,11 +111,10 @@ h1:hover {
     position: relative;
     margin: 10px;
     text-align: end;
-    top: 18rem;
-    right: 35rem;
+    animation-name: prueba;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
-
-
 
 
 .redes i {
@@ -81,33 +122,80 @@ h1:hover {
     margin: 5px 5px;
     width: 40px;
     height: 40px;
-    font-size: 25px;
+    font-size: 25px; 
+    justify-content: space-between;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
 }
 .redes a{
     text-decoration: none;
     position: relative;
 }
 
-#list {
-    margin: 10px 10px 20px -10px;
-   
+
+
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        padding: 10px 0px;
+    }
+
+    #Noi {
+        margin-left: 5px;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+
+    #more {
+        margin-right: 10px;
+        padding: 10px;
+        justify-content: flex-end;
+    }
 }
 
-#list-1 a {
-  font-size: 20px;
-  color: #6589bf;
-}
+@keyframes prueba {
+    0% {
+        left: 0px;}
 
-#list-1 a:hover {
-    color: #777680;
-}
+    15% {
+        left: 5px;
+    }
 
- #list #list-1 {
-    list-style:none
-}
+    25% {
+        left: 0px;}
 
-@media screen and (max-width: 600px) {
-  body {
- width: 100%;
+    75% {
+        left: 5px;}
+
+    100% {
+        left: 0px;
+        text-shadow: 2px 2px rgba(255, 255, 255, 0.8);
+    }
+    
   }
+
+@keyframes logox {
+    0% {
+        height: 50px;
+    }
+
+    25% {
+        height: 48px;
+    }
+
+    50% {
+        height: 50px;
+    }
+
+    75% {
+        height: 48px;
+    }
+    100% {
+        height: 50px;
+        text-shadow: 2px 2px white;
+    }
 }
