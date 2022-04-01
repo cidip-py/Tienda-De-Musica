@@ -1,5 +1,5 @@
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;  
     margin: 0;
 }
 
@@ -7,11 +7,12 @@ html {
     background: #e6e6e6;
 }
 
+
 a {
     text-decoration: none;
 }
 
-header  {
+#header  {
     min-height: 80px;
     background-color: #53719d;
     display: flex;
@@ -44,18 +45,38 @@ nav a {
 nav a:hover {
     color: #2a5a64;
     background-color: #dfdfdf;
+    border-radius: 5px;
 }
 
 .links {
     padding: 2px 5px;
     background: #e6e6e6;
     border: #e6e6e6;
+    padding: 1px;
     border-radius: 5px;
 }
 
 header h1 {
     color: black;
 }
+
+
+aside {
+    margin: 2% 0% 0% 2%;
+}
+
+#course a {
+    color: #333333;
+}
+
+#course li {
+    list-style: none;
+}
+
+aside h4 a {
+    color: #333333;
+}
+
 
 footer {
     position: fixed;
@@ -70,6 +91,29 @@ footer p{
     font-size: 12px;
     color: #333333;
 }
+
+
+.container2 {
+    position: relative;
+    margin-bottom: 15px;
+    margin-right: 0;
+}
+
+
+.Login {
+    color: #000000;
+    left: 40%;
+    top: 20%;
+    padding: 1%;
+
+}
+
+.Login:hover {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    border-radius: 20px;
+}
+
 
 .alter {
     font-size: 12px;
@@ -153,6 +197,7 @@ footer p{
 
 
 
+
 @media (max-width:700px) {
     header {
         flex-direction: column;
@@ -173,6 +218,7 @@ footer p{
         justify-content: flex-end;
         flex-direction: column;
     }
+
 }
 
 @keyframes prueba {

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: #efefef;
+}
+
+main h4 {
+    margin: 2%;
+}
+
+
+#header  {
+    min-height: 80px;
+    background-color: #53719d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+nav a {
+    color: black;
+    padding-right: 10px;
+    padding: 2%;
+}
+
+nav a:hover {
+    color: #2a5a64;
+    background-color: #dfdfdf;
+    border-radius: 20px;
+}
+
+.links {
+    padding: 2px 5px;
+    background: #e6e6e6;
+    border: #e6e6e6;
+    border-radius: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+      margin-right: 10px;
+      height: 50px;
+  }
+  
+  header h1 {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    background-color: #bfbfbf;
+    width: 100%;
+    color: #000000;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid #53719d;
+    box-sizing: border-box;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    margin: 10px 5px;
+}
+
+#remember {
+    color: #000000;
+    text-decoration: none;
+}
+
+#register {
+    text-decoration: none;
+    color: #000000;
+}
+
+.container {
+    padding: 25px;
+}
+
+nav a {
+    position: relative;
+    text-align: center;
+}
+
+
